@@ -1,0 +1,14 @@
+# Android/IntelliJ
+.gradle/
+/local.properties
+/.idea
+/build
+/captures
+.externalNativeBuild
+*.iml
+.DS_Store
+
+# Gradle
+.gradle
+/build/
+/*/build/

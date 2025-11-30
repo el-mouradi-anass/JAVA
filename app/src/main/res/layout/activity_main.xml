@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="193dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/imc_gauge" />
+
+    <EditText
+        android:id="@+id/etPoids"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="Poids (kg)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/etTaille"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="Taille (m)"
+        android:inputType="numberDecimal" />
+
+    <RadioGroup
+        android:id="@+id/rgSexe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbHomme"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:text="Homme" />
+
+        <RadioButton
+            android:id="@+id/rbFemme"
+            android:layout_width="143dp"
+            android:layout_height="wrap_content"
+            android:text="Femme" />
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/btnCalculer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculer" />
+
+    <Button
+        android:id="@+id/btnEffacer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Effacer" />
+
+    <TextView
+        android:id="@+id/tvResultat"
+        android:layout_width="149dp"
+        android:layout_height="wrap_content"
+        android:text="Résultat : "
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tvAvis"
+        android:layout_width="334dp"
+        android:layout_height="73dp"
+        android:text="Avis de l’expert : "
+        android:textSize="20sp" />
+
+</LinearLayout>
